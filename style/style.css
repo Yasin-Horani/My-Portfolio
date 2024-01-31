@@ -70,6 +70,9 @@ section{
     justify-content: center;
     align-items: center;
 }
+.home-content{
+    margin-right: 5%;
+}
 .home-content h3{
     font-size: 3.2rem;
     font-weight: 700;
@@ -139,6 +142,9 @@ span{
 .heading{
     text-align: center;
     font-size: 4.5rem;
+}
+.about-content{
+    margin-left: 5%;
 }
 .about-content h2{
     text-align: left;
