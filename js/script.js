@@ -54,7 +54,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 /*==================================== typed js  ================================================*/
 //https://github.com/mattboldt/typed.js
 const typed = new Typed('.multipule-text',{
-    strings: ['Software Developer', 'Student Software Engineering'],
+    strings: ['Software Developer', 'Web Application Developer', 'Student Software Engineering'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
