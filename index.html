@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Portfolio</title>
+    <meta name="description" content="My Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, sql,  php, web development, portfolio, Yasin Horani, Software Engineering, Application, developer">
+    <meta name="author" content="Yasin Horani">
+    <title>Yasin Portfolio</title>
     <!-- box icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- custom css -->
@@ -40,7 +42,7 @@
                 <a href="https://github.com/Yasin-Horani/"><i class='bx bxl-github'></i></a>
                 <a href="#"><i class='bx bxl-instagram'></i></a>
             </div>
-            <a href="#" class="cv-btn">Download CV</a>
+            <a href="cv/Yasin Horani CV_.pdf" class="cv-btn">Download CV</a>
         </div>
         <div class="home-img">
             <img src="img/Yasin.jpg" alt="yasin">
@@ -77,34 +79,35 @@
             <div class="services-box">
                 <i class='bx bxl-python'></i>
                 <h3>Disktop Application</h3>
-                <p>Build Disktop application with using Python languages and Tkinter and gui library.</p>
+                <p>Develop a desktop application using Python, Tkinter, and GUI libraries.</p>
                 <a href="#" class="services-btn">Read More</a>
             </div>
 
             <div class="services-box">
                 <i class='bx bx-data'></i>
                 <h3>Database Design</h3>
-                <p>Build Database and ERD Diagrams for the project that I work on it. erd erd</p>
+                <p>Design a project database with ERD for effective visualization and organization.</p>
                 <a href="#" class="services-btn">Read More</a>
             </div>
         </div>
     </section>
     <!-- contact section -->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="#">
-            <div class="input-box">
-                <input type="text" name="name" id="" placeholder="Full Name">
-                <input type="email" name="Email" id="" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="text" name="MobileNumber" id="" placeholder="Mobile Number">
-                <input type="text" name="Subject" id="" placeholder="Subject">
-            </div>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message"  class="send-btn">
-        </form>
-    </section>
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form action="contact/contact.php" method="post">
+        <div class="input-box">
+            <input type="text" name="name" placeholder="Full Name">
+            <input type="email" name="email" placeholder="Email Address">
+        </div>
+        <div class="input-box">
+            <input type="text" name="mobileNumber" placeholder="Mobile Number">
+            <input type="text" name="subject" placeholder="Subject">
+        </div>
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="send-btn">
+    </form>
+</section>
+
 
     <!-- footer -->
     <footer class="footer">
@@ -115,7 +118,7 @@
             <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
-    
+
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- typed js -->
