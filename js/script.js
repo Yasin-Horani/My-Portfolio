@@ -1,4 +1,4 @@
-/*====================================toggle iccon navbar ==========================================*/
+/*====================================toggle iccon navbar =========================================*/
 //https://boxicons.com/
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
