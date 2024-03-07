@@ -31,7 +31,7 @@ window.onscroll = () => {
 
     header.classList.toggle('sticky', window.scrollY > 100);
 
-    /*====================================remove iccon navbar when click on link===========================================*/
+    /*====================================remove iccon navbar when click on link=======================================*/
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
