@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My Portfolio">
-    <meta name="keywords" content="HTML, CSS, JavaScript, sql,  php, web development, portfolio, Yasin Horani, Software Engineering, Application, developer">
+    <meta name="keywords"
+        content="HTML, CSS, JavaScript, sql,  php, web development, portfolio, Yasin Horani, Software Engineering, Application, developer">
     <meta name="author" content="Yasin Horani">
     <title>Yasin Portfolio</title>
     <!-- box icon -->
@@ -93,21 +94,20 @@
     </section>
     <!-- contact section -->
     <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
-    <form action="contact/contact.php" method="post">
-        <div class="input-box">
-            <input type="text" name="name" placeholder="Full Name">
-            <input type="email" name="email" placeholder="Email Address">
-        </div>
-        <div class="input-box">
-            <input type="text" name="mobileNumber" placeholder="Mobile Number">
-            <input type="text" name="subject" placeholder="Subject">
-        </div>
-        <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="send-btn">
-    </form>
-</section>
-
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form id="contact-form">
+            <div class="input-box">
+                <input type="text" id="name" name="name" placeholder="Full Name" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="text" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number">
+                <input type="text" id="subject" name="subject" placeholder="Subject">
+            </div>
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit" value="Send Message" class="send-btn">Send Message</button>
+        </form>
+    </section>
 
     <!-- footer -->
     <footer class="footer">
@@ -124,7 +124,17 @@
     <!-- typed js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- custom js -->
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
     <script src="js/script.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "RZvQCoELL-c-p61JA",
+            });
+        })();
+    </script>
 </body>
 
 </html>
