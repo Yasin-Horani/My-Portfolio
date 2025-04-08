@@ -164,10 +164,10 @@ span{
     margin-bottom: 5rem;
 }
 
-.services-container{
+.services-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch; /* Stretch items to equal height */
     flex-wrap: wrap;
     gap: 2rem;
 }
